@@ -1,26 +1,18 @@
 
 
 function add(value) {
- let sum = 0;
- let count = value.split(",");
- for (let i = 0; i < count.length; i++) {
-   sum = sum + parseInt(count[i]);
-
- 
- }
- return sum;
-}
-
-function checkValue(number) {
-   if (number == "" || number == "0") {
+  if (number == "" || number == "0") {
     return 0;
     } else {
-      add(number); 
+     let sum = 0;
+    let count = value.split(",");
+    for (let i = 0; i < count.length; i++) {
+      sum = sum + parseInt(count[i]);
+   }
+ return sum;
     }  
 }
 
-
 module.exports = {
-    add,
-    checkValue
+    add
 };
