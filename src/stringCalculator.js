@@ -12,7 +12,7 @@ function checkValue(number) {
    if (number == "" || number == "0") {
     return 0;
     } else {
-      add(); 
+      add(number); 
     }  
 }
 
