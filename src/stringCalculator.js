@@ -9,7 +9,7 @@ function add(value) {
 }
 
 function checkValue(number) {
-   if (value == "" || value == "0") {
+   if (number == "" || number == "0") {
     return 0;
     } else {
       add(); 
