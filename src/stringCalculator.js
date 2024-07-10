@@ -15,7 +15,8 @@ function add(number) {
     if (negatives.length == 0) {
       throw new Error(negatives.map(item => "negatives not allowed" + item));
     } else {
-     calculateSum(value);
+    let sumValue = calculateSum(value);
+    return sumValue;
     }
   
   }
