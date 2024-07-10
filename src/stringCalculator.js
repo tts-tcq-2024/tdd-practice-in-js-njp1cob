@@ -11,7 +11,7 @@ function add(number) {
 
   function validateSum(number) {
      let sum = 0;
-    let count = number.split(","); 
+    let count = number.split(",\n"); 
     for (let i = 0; i < count.length; i++) {
     parseInt(count[i]) > 1000 ? sum: sum = sum + parseInt(count[i]);
     }
