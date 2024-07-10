@@ -1,5 +1,4 @@
 
-
 function add(number) {
   if (number == "" || number == "0") {
     return 0;
