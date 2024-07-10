@@ -16,12 +16,12 @@ function add(number) {
     if (negatives.length == 0) {
       throw new Error(negatives.map(item => "negatives not allowed" + item));
     } else {
-   calculateSum(value);
+     calculateSum(value);
     }
   
   }
 
-calculateSum(value) {
+function calculateSum(value) {
   let sum = 0;
  for (let i = 0; i < value.length; i++) {
     parseInt(value[i]) > 1000 ? sum: sum = sum + parseInt(value[i]);
