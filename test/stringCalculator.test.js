@@ -27,6 +27,10 @@ describe('StringCalculator Algorithm', () => {
         it('expectSumWithNewlineDelimiter', () => {
              expect(add("1\n2,3")).to.equal(6);
         });
+
+        it('expectSumWithNegativeNumbers', () => {
+             expect(add("1,-2")).toThrowError('Negative');
+        });
       
     });
 });
