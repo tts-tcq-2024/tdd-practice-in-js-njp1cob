@@ -17,18 +17,17 @@ function add(number) {
     if (negatives.length == 0) {
       throw new Error(negatives.map(item => "negatives not allowed" + item));
     } else {
-    for (let i = 0; i < value.length; i++) {
-    parseInt(value[i]) > 1000 ? sum: sum = sum + parseInt(value[i]);
-    }
-    return sum;
+   calculateSum(value)
     }
   
   }
 
-// checkNegative(value) {
-// let negatives = value.filter(num => num < 0);
-// throw new Error(negatives.map(item => "negatives not allowed" + item));
-// }
+calculateSum(value) {
+ for (let i = 0; i < value.length; i++) {
+    parseInt(value[i]) > 1000 ? sum: sum = sum + parseInt(value[i]);
+    }
+    return sum;
+}
 module.exports = {
     add
 };
