@@ -4,7 +4,8 @@ function add(number) {
   if (number == "" || number == "0") {
     return 0;
     } else {
-   validateSum(number);
+    let finalCount = validateSum(number);
+    return finalCount;
    }     
 }
 
