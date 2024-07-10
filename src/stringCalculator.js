@@ -10,7 +10,6 @@ function add(number) {
 }
 
   function validateSum(number) {
-    let sum = 0;
     let value = (number.replace(/^[^0-9]+/, '')).split(/,|;|\n/);
 
     let negatives = value.filter(num => num < 0);
@@ -23,6 +22,7 @@ function add(number) {
   }
 
 calculateSum(value) {
+  let sum = 0;
  for (let i = 0; i < value.length; i++) {
     parseInt(value[i]) > 1000 ? sum: sum = sum + parseInt(value[i]);
     }
