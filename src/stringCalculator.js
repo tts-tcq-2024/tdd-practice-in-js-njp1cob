@@ -12,12 +12,12 @@ function add(number) {
   function validateSum(number) {
     let sum = 0;
     let value = (number.replace(/^[^0-9]+/, '')).split(/,|;|\n/);
-    // checkNegative(value);
+
     let negatives = value.filter(num => num < 0);
     if (negatives.length == 0) {
       throw new Error(negatives.map(item => "negatives not allowed" + item));
     } else {
-   calculateSum(value)
+   calculateSum(value);
     }
   
   }
