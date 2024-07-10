@@ -13,7 +13,7 @@ function add(number) {
      let sum = 0;
     let count = number.split(","); 
     for (let i = 0; i < count.length; i++) {
-      sum = sum + parseInt(count[i]);
+    parseInt(count[i]) > 1000 ? sum: sum = sum + parseInt(count[i]);
     }
     return sum;
   }
