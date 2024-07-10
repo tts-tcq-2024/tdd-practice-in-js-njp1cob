@@ -1,9 +1,10 @@
 
-let sum = 0;
+
 function add(value) {
+ let sum = 0;
  let count = value.split(",");
  for (let i = 0; i < count.length; i++) {
-   sum = sum + count[i];
+   sum = sum + parseInt(count[i]);
 
  
  }
