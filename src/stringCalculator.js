@@ -12,8 +12,7 @@ function add(number) {
     let value = (number.replace(/^[^0-9]+/, '')).split(/,|;|\n/);
     let negatives = value.filter(num => num < 0);
     
-    if (negatives.length == 0) {
-      // let message = negatives.map(item => "negatives not allowed" + item)
+    if (negatives.length !== 0) {
       throw new Error("Negatives not allowed: " + negatives.join(", "));
     } else {
     return calculateSum(value);
