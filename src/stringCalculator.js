@@ -13,11 +13,10 @@ function add(number) {
     let negatives = value.filter(num => num < 0);
     
     if (negatives.length == 0) {
-      let message = negatives.map(item => "negatives not allowed" + item)
-      throw new Error(message);
+      // let message = negatives.map(item => "negatives not allowed" + item)
+      throw new Error("Negatives not allowed: " + negatives.join(", "));
     } else {
-    let sumValue = calculateSum(value);
-    return sumValue;
+    return calculateSum(value);
     }
   
   }
