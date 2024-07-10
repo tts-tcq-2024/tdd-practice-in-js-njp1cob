@@ -4,14 +4,18 @@ function add(number) {
   if (number == "" || number == "0") {
     return 0;
     } else {
+   validateSum(number);
+   }     
+}
+
+  function validateSum(number) {
      let sum = 0;
-    let count = number.split(",");
+    let count = number.split(","); 
     for (let i = 0; i < count.length; i++) {
       sum = sum + parseInt(count[i]);
-   }
- return sum;
-    }  
-}
+    }
+    return sum;
+  }
 
 module.exports = {
     add
