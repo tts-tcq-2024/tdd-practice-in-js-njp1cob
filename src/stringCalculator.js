@@ -6,3 +6,9 @@ function add(value) {
     return 1;
     }
 }
+
+
+
+module.exports = {
+    add
+};
