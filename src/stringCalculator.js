@@ -13,7 +13,11 @@ function add(number) {
     let sum = 0;
     let value = (number.replace(/^[^0-9]+/, '')).split(/,|;|\n/);
     for (let i = 0; i < value.length; i++) {
+    if (parseInt(value[i]) < 0) {
+    throw new Error('Negative numbers are not allowed -' + parseInt(value[i]));
+    } else {
     parseInt(value[i]) > 1000 ? sum: sum = sum + parseInt(value[i]);
+    }
     }
     return sum;
   }
