@@ -33,7 +33,7 @@ describe('StringCalculator Algorithm', () => {
             it('expectSumWithNegativeNumbers', () => {
             expect(() => {
     add("1, -2");
-  }).toThrow('Negatives not allowed: -2');
+  }).to.throw('Negatives not allowed: -2');
         });
         
       
